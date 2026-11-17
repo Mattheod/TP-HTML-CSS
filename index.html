@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Mirabelle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="haut">
+    <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+    <header class="entete">
+        <div class="conteneur entete-barre">
+            <p class="logo">Café Mirabelle</p>
+            <nav aria-label="Navigation principale">
+                <ul class="menu">
+                <li><a href="index.html" aria-current="page">Accueil</a></li>
+                <li><a href="#carte">La carte</a></li>
+                <li><a href="#infos">Infos pratiques</a></li>
+                <li><a href="#reserver">Réserver</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="contenu">
+        <section class="hero" aria-labelledby="titre__hero">
+            <div class="hero__texte">
+                <p class="hero__titre-dessus">Café de quartier · fait maison</p>
+                <h1 id="titre__hero">Un café, un gâteau, et le temps de souffler.</h1>
+                <p class="hero__intro">Pâtisseries du jour, boissons chaudes et petite restauration, tout au long de la semaine.</p>
+                <div class="boutons">
+                <a class="bouton bouton-principal" href="#reserver">Réserver une table</a>
+                <a class="bouton bouton-secondaire" href="#carte">Voir la carte</a>
+            </div>
+            </div>
+            <img class="hero__image"
+                 src="images/hero-salle-1200.jpg"
+                srcset="images/hero-salle-400.jpg 400w, images/hero-salle-800.jpg 800w, images/hero-salle-1200.jpg 1200w"
+                sizes="(min-width: 48em) 46vw, 100vw"
+                width="1200" height="800"
+                 alt="La salle du café, avec ses tables rondes en bois et ses suspensions jaunes">
+        </section>
+
+        <!--Histoire et horaire-->
+        <section class="histoire" aria-labelledby="titre-histoire">
+            <div class="conteneur">
+                <div>
+                    <h2 id="titre-histoire">Notre histoire</h2>
+                    <p>Le Café Mirabelle est né d'une envie simple : offrir un endroit chaleureux où l'on se retrouve entre voisins.</p>
+                    <p>Nos gâteaux sont préparés chaque matin avec des produits de saison.</p>
+                </div>
+                <aside class="horaires" aria-labelledby="titre-horaires">
+                    <h3 id="titre-horaires">Horaires</h3>
+                    <ul class="liste-horaires">
+                        <li><span>Lundi - vendredi</span> <span>8 h - 18 h</span></li>
+                        <li><span>Samedi</span> <span>9 h - 19 h</span></li>
+                        <li><span>Dimanche</span> <span>9 h - 13 h</span></li>
+                    </ul>
+                    <address>
+                        <span>12 rue de l'Exemple</span>
+                        <span>00000 Ville</span>
+                    </address>
+                </aside>
+            </div>
+        </section>
+
+        <!--Carte-->
+        <section class="carte" id="carte" aria-labelledby="titre-carte">
+            <div class="conteneur conteneur--etroit">
+                <h2 id="titre-carte">La carte</h2>
+                <p><strong>Boissons et pâtisseries (exemple de prix)</strong></p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Catégorie</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Espresso</td>
+                            <td>Boisson chaude</td>
+                            <td>2,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolat chaud</td>
+                            <td>Boisson chaude</td>
+                            <td>3,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>Tarte à la mirabelle</td>
+                            <td>Pâtisserie</td>
+                            <td>4,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>Cookie maison</td>
+                            <td>Pâtisserie</td>
+                            <td>2,50 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--Galerie-->
+        <section class="galerie" aria-labelledby="titre-galerie">
+            <div class="conteneur">
+                <h2 id="titre-galerie">Galerie</h2>
+                 <ul class="galerie__grille">
+                    <li><img src="images/galerie-espresso-800.jpg" srcset="images/galerie-espresso-400.jpg 400w, images/galerie-espresso-800.jpg 800w, images/galerie-espresso-1200.jpg 1200w" sizes="(min-width: 48em) 30vw, 50vw" width="800" height="600" loading="lazy" alt="Un espresso dans une tasse blanche posée sur sa soucoupe"></li>
+                    <li><img src="images/galerie-chocolat-800.jpg" srcset="images/galerie-chocolat-400.jpg 400w, images/galerie-chocolat-800.jpg 800w, images/galerie-chocolat-1200.jpg 1200w" sizes="(min-width: 48em) 30vw, 50vw" width="800" height="600" loading="lazy" alt="Un chocolat chaud dans une tasse jaune, avec de la chantilly et des guimauves"></li>
+                    <li><img src="images/galerie-tarte-800.jpg" srcset="images/galerie-tarte-400.jpg 400w, images/galerie-tarte-800.jpg 800w, images/galerie-tarte-1200.jpg 1200w" sizes="(min-width: 48em) 30vw, 50vw" width="800" height="600" loading="lazy" alt="Une tarte aux mirabelles dorées"></li>
+                    <li><img src="images/galerie-cookies-800.jpg" srcset="images/galerie-cookies-400.jpg 400w, images/galerie-cookies-800.jpg 800w, images/galerie-cookies-1200.jpg 1200w" sizes="(min-width: 48em) 30vw, 50vw" width="800" height="600" loading="lazy" alt="Des cookies aux pépites de chocolat et un verre de lait"></li>
+                    <li><img src="images/galerie-comptoir-800.jpg" srcset="images/galerie-comptoir-400.jpg 400w, images/galerie-comptoir-800.jpg 800w, images/galerie-comptoir-1200.jpg 1200w" sizes="(min-width: 48em) 30vw, 50vw" width="800" height="600" loading="lazy" alt="Le comptoir du café, avec la machine à espresso et les étagères"></li>
+                    <li><img src="images/galerie-terrasse-800.jpg" srcset="images/galerie-terrasse-400.jpg 400w, images/galerie-terrasse-800.jpg 800w, images/galerie-terrasse-1200.jpg 1200w" sizes="(min-width: 48em) 30vw, 50vw" width="800" height="600" loading="lazy" alt="La terrasse du café, avec deux chaises et une petite table ronde"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Réservation-->
+        <section class="reservation" id="reserver" aria-labelledby="titre-reservation">
+            <div class="conteneur conteneur--etroit">
+                <h2 id="titre-reservation">Réserver une table</h2>
+                <p>Les champs marqués d'une étoile (*) sont obligatoires.</p>
+                <form action="#" method="post">
+                    <div class="champ">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" autocomplete="name" required>
+                        </div>
+                        <div class="champ">
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="champs-ligne">
+                            <div class="champ">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        <div class="champ">
+                            <label for="personnes">Nombre de personnes *</label>
+                            <select id="personnes" name="personnes" required>
+                                <option value="">Choisir</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                        <div class="champ">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                    <button class="bouton bouton--vert" type="submit">Envoyer la demande</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pied" id="infos">
+        <div class="conteneur pied__haut">
+        <div class="pied__bloc">
+            <p class="pied__nom">Café Mirabelle</p>
+            <p>Café de quartier, fait maison.</p>
+            <img class="pied__image" src="images/facade-800.jpg" srcset="images/facade-400.jpg 400w, images/facade-800.jpg 800w, images/facade-1200.jpg 1200w" sizes="(min-width: 48em) 22vw, 100vw" width="800" height="600" loading="lazy" alt="La façade du café, avec son auvent vert et blanc">
+        </div>
+        <div class="pied__bloc">
+            <h2>Infos pratiques</h2>
+            <address>
+            <span>12 rue de l'Exemple</span>
+            <span>00000 Ville</span>
+            </address>
+            <p>Téléphone : <a href="tel:+330000000000">00 00 00 00 00</a></p>
+            <p>E-mail : <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <p>Accès : bus ligne 12, arrêt « Place du Parc ». Arceaux à vélo devant le café.</p>
+        </div>
+        <div class="pied__bloc">
+            <h2>Horaires</h2>
+            <ul class="liste-horaires">
+            <li><span>Lun. - ven.</span> <span>8 h - 18 h</span></li>
+            <li><span>Samedi</span> <span>9 h - 19 h</span></li>
+            <li><span>Dimanche</span> <span>9 h - 13 h</span></li>
+            </ul>
+        </div>
+        <div class="pied__bloc">
+            <h2>Nous trouver</h2>
+            <img class="pied__image" src="images/plan-800.jpg" srcset="images/plan-400.jpg 400w, images/plan-800.jpg 800w, images/plan-1200.jpg 1200w" sizes="(min-width: 48em) 22vw, 100vw" width="800" height="600" loading="lazy" alt="Plan du quartier : le café rue de l'Exemple et un arrêt de bus à proximité">
+        </div>
+        </div>
+        <div class="conteneur pied__bas">
+        <p>© 2026 Café Mirabelle</p>
+        <ul class="pied__liens">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="#haut">Retour en haut</a></li>
+        </ul>
+        </div>
+    </footer>
+</body>
+</html>
